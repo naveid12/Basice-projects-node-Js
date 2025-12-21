@@ -25,7 +25,7 @@ https.get(url, (response) =>{
         const reats = JSON.parse(data).conversion_rates;
 
         rl.question('Enter the amount is USD: ' , (amount) =>{
-            rl.question('Enter the target currency (e.g , INR ,EUR, NPR, PKR):' , (currency) =>{
+            rl.question('Enter the target currency (e.g , INR ,EUR, NPR, PKR ,YUAN):' , (currency) =>{
                 const rate = reats[currency.toUpperCase()];
                 console.log(amount,rate,currency);
                 if(rate){
