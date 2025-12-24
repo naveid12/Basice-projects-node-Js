@@ -19,7 +19,7 @@ const getWeather = async(city) =>{
         console.log(`\n Weather Information:`);
         console.log(`City: ${weatherData.name}`);
         console.log(`Temperature: ${weatherData.main.temp}`);
-        console.log(`Dsecription: ${weatherData.weather[0].description}`);
+        console.log(`Dsecription: ${weatherData.weather[0].description}`); 
         console.log(`humidity: ${weatherData.main.humidity}`);
         console.log(`Wind Speed: ${weatherData.wind.speed} m/s\n`);
 
